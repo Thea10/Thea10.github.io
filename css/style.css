@@ -158,6 +158,10 @@ footer .navbar{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 }
+
+ .container .btn{
+        width: 80%;
+      }
 }
 
 @media (max-width: 576px){
