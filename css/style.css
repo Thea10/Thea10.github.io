@@ -196,6 +196,7 @@ button:hover, button:focus{
     .container {
        max-width: 100%;
        }
+        
 }
 
 @media (min-width: 576px){
@@ -203,9 +204,12 @@ button:hover, button:focus{
         max-width: 100%;
         }
 
+        
+
 }
 
 @media (max-width: 767px){
+
  .port-header a {
     color: #ffffff;
 }
@@ -218,6 +222,11 @@ button:hover, button:focus{
  .container .btn{
         width: 80%;
         }
+
+.home h1{
+    font-size: 1.5rem;
+}
+
 
 .portfolio {
    height: 80vh;
@@ -266,6 +275,7 @@ button:hover, button:focus{
         max-width: 100%;
         left: 25%;
         }
+
 
     .container .btn{
         width: 100%;
