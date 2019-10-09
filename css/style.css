@@ -210,7 +210,7 @@ button:hover, button:focus{
 
 @media (max-width: 767px){
 
- .port-header a {
+ .port-header ul li a {
     color: #ffffff;
 }
 
