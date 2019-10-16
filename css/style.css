@@ -98,10 +98,10 @@ footer .navbar{
 }
 
 .Projects span{
-    float: left;
     box-shadow: rgba(0, 0, 0, 0.1) 0 0 1px 1px;
     padding: 10px;
-    margin:  2%;
+    margin:  5%;
+    text-align: center;
 }
 
 
@@ -168,7 +168,6 @@ button:hover, button:focus{
 
 .container .btn{
     border: 0.8px solid #ffffff;
-    width: 30%;
     padding: 10px;
     border-radius: 10px;
 }
