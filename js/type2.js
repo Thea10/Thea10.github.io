@@ -1,5 +1,7 @@
 //import 'typed.js';
 
+AOS.init();
+
 var options = {
   strings: ["Hello, ^500 I'm Cynthia", "I'm into -- ^1000Front End Development", "HTML5, ^1000 CSS3,^1000 Bootstrap 4, ^1000 Vanilla JS,^1000 React,^1000 Redux", "Hello, ^2000 I'm Cynthia"],
   typeSpeed: 50,

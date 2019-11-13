@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="img/icon.ico" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,7 +17,8 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div class="port-header">
         <header class="nav navbar-expand-sm navbar-dark" id="nav">
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"> <span class="navbar-toggler-icon"> </span> </button>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar"> <span
+                    class="navbar-toggler-icon"> </span> </button>
             <div class="navbar-brand">
                 <a href="index.html"> <img src="img/icon.ico" alt="cart" /> </a>
             </div>
@@ -26,77 +29,99 @@
             </ul>
         </header>
         <div class="portfolio-cont container">
-            <div class="portfolio">
+            <div class="portfolio" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500"
+                data-aos-easing="ease-in-out">
                 <div class="text">
                     <h1>Some Side Projects</h1>
                 </div>
             </div>
             <div class="Projects" id="project">
-                <div> <img src="img/homeimg.jpg" alt="portfolio" height="100" />
+                <div data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <img src="img/homeimg.jpg" alt="portfolio" height="100" />
                     <h3> <a href="https://thea10.github.io" target="_blank"> Portfolio </a> </h3>
                     <h6>My Portfolio</h6>
-                     <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/thea10.github.io" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/thea10.github.io"
+                            target="_blank">Go to Repo </a> </span>
                     <span> HTML</span> <span> BootStrap</span> <span> Typed.js</span>
                 </div>
-                <div> 
-                    <a href="https://lucid-jepsen-558407.netlify.com" target="_blank"> <img src="img/quiz.PNG" alt="pop" height="100" />  </a>
+
+                <div data-aos="fade-down" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <a href="https://weather---forecast.herokuapp.com/"><img src="img/forecast.PNG" alt="weather"
+                            height="100" /></a>
+                    <h3> <a href="https://weather---forecast.herokuapp.com/" target="_blank">Weather ForeCast App </a>
+                    </h3>
+                    <h6>weather forecast app (a day, three hours interval), Users can also view details for a time frame
+                    </h6>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/forecast"
+                            target="_blank">Go to Repo </a> </span>
+                    <span> React</span> <span> BootStrap</span>
+                </div>
+
+                <div data-aos="fade-left" data-aos-delay="2500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <a href="https://lucid-jepsen-558407.netlify.com" target="_blank"> <img src="img/quiz.PNG" alt="pop"
+                            height="100" /> </a>
                     <h3> <a href="https://lucid-jepsen-558407.netlify.com" target="_blank"> Quiz </a> </h3>
                     <h6>Users can answer questions, save and view their scores</h6>
-                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/quiz-app" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/quiz-app"
+                            target="_blank">Go to Repo </a> </span>
                     <span>Vanilla JS</span>
                 </div>
-                <div> 
-                    <a href="https://todo-booth-0f1df9.netlify.com" target="_blank"> <img src="img/todo.PNG" alt="todo" height="100" /> </a>
+                <div data-aos="fade-up" data-aos-delay="3000" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <a href="https://todo-booth-0f1df9.netlify.com" target="_blank"> <img src="img/todo.PNG" alt="todo"
+                            height="100" /> </a>
                     <h3> <a href="https://todo-booth-0f1df9.netlify.com" target="_blank"> Sample To Do App </a></h3>
-                     <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/todo" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/todo" target="_blank">Go
+                            to Repo </a> </span>
                     <span>Vanilla JS</span>
                 </div>
-                <div> 
-                    <a href="https://silly-contact.netlify.com" target="_blank">  <img src="img/P45.PNG" alt="contact" height="100" /></a>
+                <div data-aos="fade-down" data-aos-delay="3500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <a href="https://silly-contact.netlify.com" target="_blank"> <img src="img/P45.PNG" alt="contact"
+                            height="100" /></a>
                     <h3> <a href="https://silly-contact.netlify.com" target="_blank"> Sample Contact App </a> </h3>
                     <h6>Basic functionality includes creating, editing and deleting contacts, Vanilla JS</h6>
-                     <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/contact" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/contact"
+                            target="_blank">Go to Repo </a> </span>
                     <span>Vanilla JS</span>
                 </div>
-                 <div>  
-                     <a href="https://issue-swanson.netlify.com/" target="_blank"> <img src="img/issue.PNG" alt="issuetracker" height="100" /> </a>
+
+                <div data-aos="fade-left" data-aos-delay="4000" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <a href="https://issue-swanson.netlify.com/" target="_blank"> <img src="img/issue.PNG"
+                            alt="issuetracker" height="100" /> </a>
                     <h3> <a href="https://issue-swanson.netlify.com/" target="_blank">Sample Issue Tracker </a> </h3>
-                     <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/issue_tracker" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/issue_tracker"
+                            target="_blank">Go to Repo </a> </span>
                     <span>Vanilla JS</span> <span> BootStrap</span>
                 </div>
-                <div>  
+                <div data-aos="fade-up" data-aos-delay="4500" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <a href="/course.html" target="_blank"> <img src="img/start.png" alt="startng" height="100" /> </a>
                     <h3> <a href="/course.html" target="_blank">Start Ng individual Courses Page </a> </h3>
                     <span> BootStrap, HTML, CSS</span>
                 </div>
-                <div> 
-                    <img src="img/forecast.PNG" alt="weather" height="100" />
-                    <h3> <a href="#" target="_blank">Weather ForeCast App </a> </h3>
-                    <h6>weather forecast app (a day, three hours interval), Users can also view details for a time frame</h6>
-                    <span class="btn btn-warning disabled" style="border-radius: 5px;">Troubleshooting</span>
-                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/forecast" target="_blank">Go to Repo </a> </span>
-                    <span> React</span> <span> BootStrap</span>
-                </div>
-                <div> 
+
+                <div data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <img src="img/cart.PNG" alt="cart" height="100" />
                     <h3> <a href="#"> Sample Shopping Cart </a> </h3>
-                    <h6>Sample ecommerce website; Users can filter items by price, and size; can add and remove items from cart</h6>
+                    <h6>Sample ecommerce website; Users can filter items by price, and size; can add and remove items
+                        from cart</h6>
                     <span class="btn btn-danger disabled">Undeployed</span>
-                     <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/cart" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/cart" target="_blank">Go
+                            to Repo </a> </span>
                     <span> React</span> <span> Redux</span> <span> BootStrap</span> <span> Typed.js</span>
                 </div>
                 <div> <img src="" alt="meme" height="100" />
                     <h3> <a href="#" target="_blank"> Simple Meme Maker App </a> </h3>
-                    <span class="btn btn-secondary disabled "> Ongoing</span>  <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/meme" target="_blank">Go to Repo </a> </span>
-                    <span> React</span> <span> BootStrap</span>                
+                    <span class="btn btn-secondary disabled "> Ongoing</span> <span class="btn btn-outline-secondary">
+                        <a href="https://github.com/Thea10/meme" target="_blank">Go to Repo </a> </span>
+                    <span> React</span> <span> BootStrap</span>
                 </div>
                 <div> <img src="img/notepad.PNG" alt="notepad" height="100" />
-                    <h3> <a href="#" target="_blank"> Sample NotePad  </a> </h3>
+                    <h3> <a href="#" target="_blank"> Sample NotePad </a> </h3>
                     <span class="btn btn-danger disabled">Undeployed</span>
-                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/notes_app-" target="_blank">Go to Repo </a> </span>
+                    <span class="btn btn-outline-secondary"> <a href="https://github.com/Thea10/notes_app-"
+                            target="_blank">Go to Repo </a> </span>
                     <span>Vanilla JS</span>
                 </div>
-                
+
 
 
 
@@ -108,11 +133,13 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
+        AOS.init();
         window.addEventListener('scroll', (e) => {
             var nav = document.getElementById('nav');
-  //  var navbtn = nav.querySelectorAll('button');
-  //to change the background on scroll
+            //  var navbtn = nav.querySelectorAll('button');
+            //to change the background on scroll
             if (window.scrollY > 50) {
                 nav.classList.add('nav-scrolled')
             } else if (nav.classList.contains('nav-scrolled')) {
@@ -128,7 +155,7 @@
                 }
             }); */
 
-})
+        })
     </script>
 </body>
 
