@@ -1,11 +1,11 @@
 body{
-    font-family: 'Nunito', Pacifico , Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Nunito', 'Pacifico' , Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* home */
 
 .logo, span{
-    font-family: Pacifico, Roboto;
+    font-family: 'Pacifico', Roboto, cursive;
 }
 
 .logo{
