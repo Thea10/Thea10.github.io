@@ -1,18 +1,25 @@
 body{
-    font-family: 'Nunito', Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    }
+    font-family: 'Nunito', Pacifico , Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 /* home */
 
+.logo, span{
+    font-family: Pacifico, Roboto;
+}
+
+.logo{
+    margin-right: 0.5rem;
+}
 .home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url("../img/homeimg.jpg");
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url("../img/homeimg.jpg");*/
     background-size: cover;
     background-position: top;
     height: 100vh;
     }
 
  .home a, footer a{
-   color: var( --white); 
+   color: inherit; 
 }
 
 footer .navbar{
@@ -27,8 +34,9 @@ footer .navbar{
     }
 
 
+
 .nav-scrolled{
-    background:  rgba(14, 16, 27, 0.79);
+    background:  rgba(0, 0, 0, 0.81);
     z-index: 1030;
     height: 8vh;
 }
@@ -44,7 +52,7 @@ footer .navbar{
 }
 
 .portfolio{
-     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url("../img/portimg.jpg");
+     /*background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4) ), url("../img/portimg.jpg");*/
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -54,13 +62,18 @@ footer .navbar{
 }
 
 .portfolio-cont{
-     display:flex;
-    flex-direction: row;
+   height: 80vh;
+   position: absolute;
+   top: 10%;
 
 }
 
 .portfolio-cont .text{
     display: none;
+}
+
+.portfolio-cont a{
+    color: #611576;
 }
 
 .Projects{
@@ -138,7 +151,8 @@ button:hover, button:focus{
 }
 
 .navbar-brand img{
-    height: 50px;
+    height: 45px;
+    margin-top: 0.2rem;
 }
 
 .nav ul{
@@ -157,14 +171,138 @@ button:hover, button:focus{
     cursor: pointer;
 }
 
+.collapsebtn1{
+    padding:5px;
+    margin-right: 10px;
+    border: none;
+   }
+  
+   .collapsebtn1:focus{
+    outline: none;
+  }
+  
+   .animated-icon1{
+    width: 20px;
+    height:20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;}
+  
+    .animated-icon1  span{
+      display: block;
+      position: absolute;
+      opacity: 1;
+      border-radius: 5px;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+      height:2px;
+      width:100%;
+      background: #000000;
+  }
+  
+  
+  .animated-icon1  span:nth-child(1){
+    top:4px;
+  }
+  
+  .animated-icon1  span:nth-child(2){
+    top:10px;
+    width:100%;          
+  }
+  
+  .animated-icon1  span:nth-child(3){
+    top:15px;
+  }
+  
+  .animated-icon1.open span:nth-child(1){
+    top:10px;
+    left:4px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .animated-icon1.open span:nth-child(2){
+    opacity: 0;
+  width: 0%;
+  }
+  
+  .animated-icon1.open span:nth-child(3){
+    top:10px;
+    left:4px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+.home .container{
+    height: 100vh;
+}
+
+.container .circles{
+    position: fixed;
+    top: 30%;
+    left: 3%;
+
+}
+
+.circles span{
+    padding: 0.5rem;
+    border-radius: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.red{
+    background-color: red;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.yellow{
+    background-color: yellow;
+}
 .container .text{
-    color: #ffffff;
+    color: black;
     position: absolute;
     top: 30%;
-    left: 20%;
-    width: 50%;
-    text-align: center;
+    text-align: left;
+    height: 70vh;
+    
 }
+
+.showabout{
+    animation-duration: 10s !important;
+    animation-delay: 2s;
+}
+
+.showabout .fa{
+    font-size: 2rem;
+}
+
+.showabout:hover{
+    animation: none;
+}
+
+.container .about{
+    box-shadow: 0px 2px 2px 2px rgba(207, 203, 203, 0.8);
+    height: 70vh;
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    top: 17%;
+    right: 2%;
+}
+
+
+
 
 .container .btn{
     border: 0.8px solid #ffffff;
@@ -176,10 +314,66 @@ button:hover, button:focus{
     background-color: #ffffff;
 }
 
+.show{
+    display: block !important;
+}
+
+.home .container h1{
+    font-size: 4rem;
+}
+
+.home .container h3{
+    font-size: 2.75rem;
+}
+
 .container h6{
     font-size: 0.9rem;
 }
 
+.carousel{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
+
+}
+
+
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 100px;
+    background: #000000;
+}
+
+.carousel-inner{
+    padding: 5rem;
+    text-align: center;
+    height: 100%;
+    overflow: auto;
+
+}
+
+.carousel-item{
+    position: unset;
+    height: 90%;
+    width: 100%;
+  
+}
+
+
+
+.carousel-caption{
+    position: unset;
+    padding: 0;
+    color: #495057;
+    margin: auto;
+
+}
 
 
 
@@ -199,12 +393,44 @@ button:hover, button:focus{
     .container {
        max-width: 100%;
        }
+
+       .home .container .text{
+        left: 5%;
+        text-align: left;
+        width: 50vw;
+        height: 70vh;
+       }
+
+       .home .container .about{
+        height: auto;
+        padding: 4rem;
+        width: 45vw;
+        display: none; 
+        top: 25%;
+    }
+
+    .showabout{
+        position: relative;
+        /* top: 50%; */
+        /* left: 25%; */
+        cursor: pointer;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 50%;
+        transition: all 0.6s;
+    }
+    .carousel-item.active{
+        display: flex;
+    }
+
+   
         
 }
 
 @media (min-width: 576px){
     .container {
         max-width: 100%;
+        
         }
 
         
@@ -213,22 +439,15 @@ button:hover, button:focus{
 
 @media (max-width: 767px){
 
- .port-header ul li a {
-    color: #ffffff;
-}
 
 .portfolio-cont{
-    flex-direction: column;
-    align-items: center;
+    height: 70vh;
     }
 
  .container .btn{
         width: 80%;
         }
 
-.home h1{
-    font-size: 1.5rem;
-}
 
 
 .portfolio {
@@ -253,10 +472,14 @@ button:hover, button:focus{
       
 }
 
-@media (max-width: 576px){
+@media (max-width: 767px){
 
      .navbar-brand, .nav ul{
         margin-left: 3%;
+        }
+
+        .logo{
+            font-size: 1.9rem;
         }
 
         .navbar-brand img{
@@ -269,15 +492,28 @@ button:hover, button:focus{
         }
 
     .nav-scrolled ul{
-   background: rgba(14, 16, 27, 0.79);
-     margin-top: 0.5%;
+   background: rgba(0, 0, 0, 0.81);
+     margin-top: 0.5rem;
         
      }
 
-    .container .text {
+     .nav-scrolled  .animated-icon1  span{
+         background: #ffffff;
+
+     }
+
+    .container .text, .container .about {
         max-width: 100%;
-        left: 25%;
+        left: 0;
+        width: unset;
+        text-align: center;
+        position: relative;
+        right: 0;
         }
+
+        .showabout, .showabout *{
+            display: none !important;
+         }
 
 
     .container .btn{
@@ -290,5 +526,44 @@ button:hover, button:focus{
          font-size: 0.7em;
          flex-wrap: nowrap;
 }
+
+}
+
+@media(max-width: 475px){
+
+    .container .text, .container .about{
+       
+        left: 0;
+        right: 5%;
+        width: auto;
+        
+    }
+
+    .container .about{
+        height: auto;
+    }
+
+    .home .container h1{
+        font-size: 2.5rem;
+    }
+    
+    .home .container h3{
+        font-size: 1.75rem;
+    }
+
+    .portfolio-cont{
+        height: auto;
+        }
+
+        .portfolio-cont h3{
+            font-size: 1rem;
+        }
+
+        .portfolio-cont h6, .portfolio-cont .btn{
+            font-size: 0.8rem;
+        }
+
+
+
 
 }
