@@ -11,19 +11,217 @@
     <meta name="keywords"
         content="cynthia, cynthia akinade, thea10.github.io, cynthia's portfolio, cynthia olufunmilayo akinade, olufunmiladunni hyde, olufumiladunni twitter, olufunmiladunni, thea10, female, programmer, female programmer in Lagos, female programmer in Nigeria,  female developer, female developer in Lagos, female front end developer in Lagos, female front end developer in Nigeria">
     <link rel="shortcut icon" href="img/icon.ico" />
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <script src="https://kit.fontawesome.com/626775a3aa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>CYNTHIA OLUFUNMILADUNNI</title>
 </head>
 
 <body class="App">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="home">
+    <div class="container-fluid p-2" style="background: linear-gradient(black, #011831, black); ">
+        <header class="nav navbar-expand-sm navbar-light position-fixed" id="nav">
+            <button class="navbar-toggler collapsebtn1 d-lg-none " type="button" data-toggle="collapse"
+                data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+            <div class="navbar-brand d-flex justify-content-evenly ml-3">
+               
+                <a href="index.html">  <img src="img/icon.ico" height="30px" alt="me" /> </a>
+            </div>
+    
+            <ul class="collapse navbar-collapse" id="navbar">
+                <li class="nav-link"> <a href="#about" id="showabout" >About Me</a> </li>
+                <li class="nav-link"> <a href="#works" id="showworks">Works</a></li>
+                <li class="nav-link"> <a href="https://github.com/Thea10" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            </ul>
+        </header>
+
+        <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos-offset="300" class="container text">
+            <h1>Hello, I'm Cynthia</h1>
+            <h3 >I'm a front-end web developer based in Lagos, Nigeria</h3>
+
+            <span style="transition: all 0.6s;"   class="showabout btn btn-me heartBeat mt-3">More <i class="fa fa-chevron-down"  aria-hidden="true" id="caret"></i> </span>
+
+          
+
+
+        </div>
+
+        <div   id="about"  class="about mt-4">
+            <h3  style="color: #ffffffe0;">  <span class=" icon-2"></span> About Me  </h3>
+
+            <div class="row justify-content- m-0">
+                <div class="col-md-6 p-2"> 
+                    <small class="break-word" style="font-size: 60%;">
+                        My Name is Cynthia Akinade. I love to learn about anything I don't know yet and I am absolutely obsessed with providing solutions to problems in any way I can. At the moment I am a front-end developer who uses the required tools to bring UI mockups to life as well as implement the required communication medium between the client and server. Basically I combine what UI does and what BE does to make a web application come to life. That's fun (when it's hard and not hard). <br>
+                        When I'm not working I reeeaddd different things or listen to music.
+
+                    </small>
+                </div>
+
+                <div class="col-md-6 p-0">
+                    <h6>Stack <i class="fa fa-layer-group    "></i></h6>
+                    <ul class="stack row w-100 mr-2 ml-0 my-3 justify-content-between pl-0"> 
+                        <li class="col-3 col-md-2 d-flex"><small>HTML</small> <i class="fa fa-html5 badge badge-danger" aria-hidden="true"></i> </li>
+                        
+                        <li class="col-3 col-md-2 d-flex"><small>CSS</small>  <i class="fa fa-css3 badge badge-primary" aria-hidden="true"></i></li>
+                         <li class="col-3 col-md-2 d-flex"><small>SASS</small>  <i class="fab fa-sass badge badge-pink  text-white  "></i> </li>
+                    </ul>
+                    <ul class="stack w-100 mr-2 ml-0 my-3 row justify-content-between pl-0">
+                        <li class="col-3 col-md-2 d-flex"><small>JQUERY</small>   </li>
+                        <li class="col-3 col-md-2 d-flex"><small>JAVASCRIPT</small>  <i class="fab fa-js badge badge-warning "></i></li>
+                        <li class="col-3 col-md-2 d-flex"><small>TYPESCRIPT</small>   </li>
+                    </ul>
+
+                    <ul class="stack row w-100 mr-2 ml-0 my-3 justify-content-between pl-0">
+                        <li class="col-3 col-md-2 d-flex"><small>ANGULAR</small>   <i class="fab fa-angular badge badge-danger   "></i> </li>
+                        <li class="col-3 col-md-2 d-flex"><small>REACT</small>  <i class="fab fa-react    "></i> </li>
+                        <li class="col-9 d-flex mt-3 mx-auto " style="border-radius: 0px 0px 20px 20px;"><small>"Whatever I need to learn to complete a project"</small></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 p-0 mt-4">
+                    <h6>Other Tools I use <i class="fa fa-tools    "></i></h6>
+                    <ul class="stack row w-100 mr-2 ml-0 my-3 justify-content-between pl-0"> 
+                        <li class="col-3 col-md-2 d-flex"><small>GIT</small> <i class="fa fa-code-branch badge badge-warning" aria-hidden="true"></i>  </li>
+                        
+                        <li class="col-3 col-md-2 d-flex"><small>GITHUB</small> <i class="fa fa-github" aria-hidden="true"></i> </li>
+                         <li class="col-3 col-md-2 d-flex"><small>FIREBASE</small> </li>
+                    </ul>
+                 
+
+                 
+                </div>
+            </div>
+        </div>
+
+        <div   class="works mt-4" id="works">
+            <h3  style="color: #ffffffe0;"> Things I've worked on <span class=" icon-3"></span>  </h3>
+
+            <div class="row m-0 justify-content-around">
+                <div class="projects col-12 col-md-4  mx-auto my-3 mx-md-3 my-md-auto p-2 ">
+                    <!--<ul class="ripple pl-0">
+                        <li></li>
+                     
+                    </ul>-->
+                    <div class="details row m-0 justify-content-evenly h-100">
+                      
+                            <div class="img-holder col-12  h-75 p-0 d-flex  align-items-center justify-content-center">
+                                <img src="../img/screenplay.png" height="40" alt="projimg">
+                               
+                            </div>
+                        
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+
+                            <span class="col-3 mt-2">ANGULAR 8 <i class="fab fa-angular    "></i></span>
+                            <span class="col-3 mt-2">TYPESCRIPT</span>
+                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+
+                            <span class="col-4 mt-3">GITHUB <i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="col-4 mt-3"> Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i> </span>
+                        </small>
+                    </div>
+                   
+                </div>
+
+                <div class="projects col-12 col-md-4  mx-auto my-3 mx-md-3 my-md-auto p-2 ">
+                    <!--<ul class="ripple pl-0">
+                        <li></li>
+                     
+                    </ul>-->
+                    <div class="details row m-0 justify-content-evenly h-100">
+                      
+                            <div class="img-holder col-12  h-75 p-0 d-flex  align-items-center justify-content-center">
+                                <img src="../img/screenplay.png" height="40" alt="projimg">
+                               
+                            </div>
+                        
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+
+                            <span class="col-3 mt-2">ANGULAR 8 <i class="fab fa-angular    "></i></span>
+                            <span class="col-3 mt-2">TYPESCRIPT</span>
+                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+
+                            <span class="col-4 mt-3">GITHUB <i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="col-4 mt-3"> Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i> </span>
+                        </small>
+                    </div>
+                   
+                </div>
+                <div class="projects col-12 col-md-4  mx-auto my-3 mx-md-3 my-md-auto p-2 ">
+                    <!--<ul class="ripple pl-0">
+                        <li></li>
+                     
+                    </ul>-->
+                    <div class="details row m-0 justify-content-evenly h-100">
+                      
+                            <div class="img-holder col-12  h-75 p-0 d-flex  align-items-center justify-content-center">
+                                <img src="../img/screenplay.png" height="40" alt="projimg">
+                               
+                            </div>
+                        
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+
+                            <span class="col-3 mt-2">ANGULAR 8 <i class="fab fa-angular    "></i></span>
+                            <span class="col-3 mt-2">TYPESCRIPT</span>
+                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+
+                            <span class="col-4 mt-3">GITHUB <i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="col-4 mt-3"> Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i> </span>
+                        </small>
+                    </div>
+                   
+                </div>
+                <div class="projects col-12 col-md-4  mx-auto my-3 mx-md-3 my-md-auto p-2 ">
+                    <!--<ul class="ripple pl-0">
+                        <li></li>
+                     
+                    </ul>-->
+                    <div class="details row m-0 justify-content-evenly h-100">
+                      
+                            <div class="img-holder col-12  h-75 p-0 d-flex  align-items-center justify-content-center">
+                                <img src="../img/screenplay.png" height="40" alt="projimg">
+                               
+                            </div>
+                        
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+
+                            <span class="col-3 mt-2">ANGULAR 8 <i class="fab fa-angular    "></i></span>
+                            <span class="col-3 mt-2">TYPESCRIPT</span>
+                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+
+                            <span class="col-4 mt-3">GITHUB <i class="fa fa-github" aria-hidden="true"></i></span>
+                            <span class="col-4 mt-3"> Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i> </span>
+                        </small>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="d-flex justify-content-between align-items-center">
+            <ul class=" navbar">
+                <li class="nav-link"> <a href="mailto:olucynakin@gmail.com" target="_blank"> <i class="fa fa-envelope" aria-hidden="true"></i> </a></li>
+                <li class="nav-link"> <a href="https://www.linkedin.com/in/cynthia-akinade-b522a2119"
+                        target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li class="nav-link"> <a href="others/Akinade Cynthia's Resume.pdf" target="_blank"> Resumé</a></li>
+            </ul>
+
+         
+        </footer>
+    </div>
+   
+    <!--<div class="home">
         <header class="nav navbar-expand-sm navbar-light" id="nav">
             <button class="navbar-toggler collapsebtn1 d-lg-none " type="button" data-toggle="collapse"
                 data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +229,7 @@
             </button>
             <div class="navbar-brand d-flex justify-content-evenly">
                
-                <a href="index.html">  <h1 class="logo">C</h1> <!--<img src="img/icon.ico" alt="cart" />--> </a>
+                <a href="index.html">  <img src="img/icon.ico" alt="me" /> </a>
             </div>
 
             <ul class="collapse navbar-collapse" id="navbar">
@@ -46,12 +244,12 @@
                 <span class="yellow"></span>
             </div>
             <div class="text">
-                <!--<h1 id="type"></h1>-->
-                <h1> Hello, I'm <span style="color: #55036d;">Cynthia</span> </h1>
-                <h3 class="font-weight-normal">  a Front End Developer </h3>
-                <!--<a href="portfolio.html" class="btn mt-5"  data-aos="fade-up" data-aos-delay="5500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <h1 id="type"></h1>
+                <h1> Hello, I'm <span>Cynthia</span> </h1>
+                <h3 class="font-weight-normal"> I am a Front End Web Developer based in Lagos, Nigeria </h3>
+                <a href="portfolio.html" class="btn mt-5"  data-aos="fade-up" data-aos-delay="5500" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h5 style="margin: auto;">My Projects</h5>
-                </a>-->
+                </a>
                 <h6 style="margin: 20px 0">I love trying my hands at new stuff!</h6>
                 <a href="mailto:olucynakin@gmail.com" > <i class="fa fa-envelope" aria-hidden="true"></i> Send me an email </a>
 
@@ -85,21 +283,12 @@
 
             </div>
         </div>
-    </div>
+    </div>-->
 
-    <div>
-        <footer class="fixed-bottom d-flex justify-content-between align-items-center">
-            <ul class=" navbar">
-                <li class="nav-link"> <a href="mailto:olucynakin@gmail.com" target="_blank"> <i class="fa fa-envelope" aria-hidden="true"></i> </a></li>
-                <li class="nav-link"> <a href="https://www.linkedin.com/in/cynthia-akinade-b522a2119"
-                        target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li class="nav-link"> <a href="others/Akinade Cynthia's Resume.pdf" target="_blank"> Resumé</a></li>
-            </ul>
+ 
+  
 
-            <img src="img/icon.ico" alt="cart" height="40" />
-        </footer>
-
-    </div>
+   
     <!--    <hr style=" border-top: 1px solid #673AB7; width: 30%; margin-top: 3%" />
     <div class=" mt-5">
             <h2 style="text-align: center"> Side "Projects" </h2>
@@ -153,7 +342,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/type2.js"></script>
     <script>
           AOS.init();
@@ -199,7 +388,33 @@
 
         function showabout(){
             $('.showabout').on('click', function(){
+                $('.showabout').toggleClass('heartBeat');
                 $('.about').toggleClass('show');
+                $('#caret').css('transition-duration', 1200);
+                setTimeout(()=> $('#caret').toggleClass('fa-chevron-up') , 1000);
+                $('.works').toggleClass('show');
+               
+             
+                
+            })
+
+            $('#showabout').on('click', function(){
+                $('.showabout').toggleClass('heartBeat');
+                $('.about').toggleClass('show');
+                $('#caret').css('transition-duration', 1200);
+                setTimeout(()=> $('#caret').toggleClass('fa-chevron-up') , 1000)
+               
+             
+                
+            })
+
+            $('#showworks').on('click', function(){
+                $('.showabout').toggleClass('heartBeat');
+                $('.works').toggleClass('show');
+              
+               
+             
+                
             })
         }
 
