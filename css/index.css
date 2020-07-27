@@ -405,7 +405,14 @@ ul.stack{
 
 
 .works .projects{
-  height: 200px;
+  height: auto;
+ box-shadow: 0 1px 1px 0px rgb(0 123 255 / 49%)
+}
+
+.works img{
+  width: 80%;
+  height: 70%;
+
 }
 
 .works .projects .environments span{
@@ -422,6 +429,16 @@ ul.stack{
     justify-content: center;
     box-shadow:0 1px 1px 0px rgb(0 123 255 / 49%);
 
+}
+.works .projects .environments span:last-child{
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.works .projects .environments span a:hover{
+  border-radius: 10px;
+  background: #013165;
+  cursor: pointer;
 }
 
 .works .projects .ripple{
