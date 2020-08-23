@@ -28,7 +28,16 @@
             </button>
             <div class="navbar-brand d-flex justify-content-evenly ml-3">
 
-                <a href="index.html"> <img src="img/icon.ico" height="30px" alt="me" /> </a>
+                <a href="index.html" id="carouselExampleSlidesOnly" class=" carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <img class="profile-img carousel-item active" src="img/icon.ico" height="55px" alt="me" />
+                        <img class="profile-img carousel-item" src="img/avar.jpg" height="55px" alt="me" />
+                        <img class="profile-img carousel-item" src="img/avar2.png" height="55px" alt="me" />
+                        <img class="profile-img carousel-item" src="img/avar3.png" height="55px" alt="me" />
+                        <img class="profile-img carousel-item" src="img/avar4.png" height="55px" alt="me" />
+
+                    </div>
+                </a>
             </div>
 
             <ul class="collapse navbar-collapse" id="navbar">
@@ -59,7 +68,7 @@
                 <div class="col-md-6 p-2 mt-3 mt-md-0">
                     <small class="break-word" style="font-size: 60%;">
                         My Name is Cynthia Akinade. I love to learn about anything I don't know yet and I am absolutely obsessed with providing solutions to problems in any way I can. At the moment I am a front-end developer who uses the required tools to bring UI mockups to life as well as implement the required communication medium between the client and server. Basically I combine what UI does and what BE does to make a web application come to life. That's fun (when it's hard and not hard). <br>
-                        When I'm not working I reeeaddd different things or listen to music.
+                        When I'm not working I reeeaddd different things, work on improving my skills, take c# lessons, think about if I really have impostor syndrome  or listen to music.
 
                     </small>
                 </div>
@@ -104,7 +113,7 @@
             <h3 style="color: #ffffffe0;"> Things I've worked on <span class=" icon-3"></span> </h3>
 
             <div class="row m-0 justify-content-around">
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
                     <!--<ul class="ripple pl-0">
                         <li></li>
                      
@@ -127,7 +136,7 @@
 
                 </div>
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
 
                     <div class="details row m-0 justify-content-evenly h-100">
 
@@ -153,7 +162,7 @@
                 </div>
 
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
                     <!--<ul class="ripple pl-0">
                         <li></li>
                      
@@ -179,7 +188,7 @@
 
                 </div>
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
                     <!--<ul class="ripple pl-0">
                         <li></li>
                      
@@ -211,7 +220,7 @@
 
                 </div>
 
-                <!--<div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <!--<div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
                   
                     <div class="details row m-0 justify-content-evenly h-100">
                       
@@ -237,7 +246,7 @@
 
 
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
                     <!--<ul class="ripple pl-0">
                         <li></li>
                      
@@ -262,7 +271,7 @@
 
                 </div>
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2 p-2 ">
+                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
                     <!--<ul class="ripple pl-0">
                         <li></li>
                      
@@ -299,6 +308,8 @@
                 <li class="nav-link"> <a href="https://www.linkedin.com/in/cynthia-akinade-b522a2119" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li class="nav-link"> <a href="https://drive.google.com/file/d/1sX3bYKdoQLDxTOYQStL71I2k1e44Hw0N/view?usp=sharing" target="_blank"> Resumé</a></li>
             </ul>
+
+            <a style="font-size: 0.4rem;"> &copy <span id="copy"></span> Cynthia Akinade </a>
 
 
         </footer>
@@ -431,23 +442,17 @@
         AOS.init();
         window.addEventListener('scroll', (e) => {
             var nav = document.getElementById('nav');
-            //  var navbtn = nav.querySelectorAll('button');
-            //to change the background on scroll
             if (window.scrollY > 50) {
                 nav.classList.add('nav-scrolled')
             } else if (nav.classList.contains('nav-scrolled')) {
                 nav.classList.remove("nav-scrolled");
 
             }
+        });
 
-            /* navbtn.forEach(btn => {
-                if (nav.classList.contains('header-scrolled')) {
-                btn.classList.add('btn-scrolled')
-                } else {
-                btn.classList.remove('btn-scrolled')
-                }
-            }); */
 
+        $('.carousel').carousel({
+            interval: 6000
         })
 
         $(document).ready(function() {
@@ -456,8 +461,8 @@
                 showabout();
 
 
-                // let date = new Date().getFullYear();
-                // document.getElementById('copy').textContent = date;
+                let date = new Date().getFullYear();
+                document.getElementById('copy').textContent = date;
             }
 
 
