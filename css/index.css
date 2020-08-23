@@ -113,6 +113,15 @@
     }
 }
 
+@keyframes slowslosh {
+    0% {
+        transform: translate(0%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(0%, -150%) rotate(360deg);
+    }
+}
+
 .heartBeat {
     -webkit-animation: heartBeat 4000ms ease-in-out infinite;
     -moz-animation: heartBeat 4000ms ease-in-out infinite;
@@ -268,6 +277,62 @@ a:hover,
     color: #b4d2f1b8;
 }
 
+.blobone {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 85px;
+    /* background: red; */
+    width: 85px;
+    border-radius: 50%;
+    padding: 1rem;
+    background: #011831;
+    box-shadow: inset 4px 4px 4px 4px #010c19;
+}
+
+.blobone .waves {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background: #06386e;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 4px 4px 4px 4px #011129;
+}
+
+.blobone .waves::before {
+    border-radius: 46%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.blobone .waves::after {
+    border-radius: 39%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blobone .waves::before,
+.blobone .waves::after {
+    background: #f4f4f4;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -40%;
+    transform: translate(0%, -50%);
+    -moz-animation: slowslosh 15s linear infinite;
+    -ms-animation: slowslosh 15s linear infinite;
+    -webkit-animation: slowslosh 15s linear infinite;
+    animation: slowslosh 15s linear infinite;
+    position: absolute;
+}
+
+.blobone:hover .waves::before,
+.blobone:hover .waves::after {
+    -webkit-animation: slowslosh 8s linear infinite;
+    animation: slowslosh 8s linear infinite;
+}
+
 .text {
     position: relative;
     margin-top: 7rem;
@@ -287,7 +352,8 @@ h3 {
 }
 
 .btn-me {
-    border-color: #b4d2f1e3;
+    border-color: /*#b4d2f1e3*/
+    #b4d2f1;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
@@ -367,26 +433,25 @@ h6 {
     display: block;
 }
 
-ul.stack {
+ul {
     list-style-type: none;
 }
 
 .stack li {
-    animation: beat 5000ms ease-in-out infinite;
-    -webkit-animation: beat 5000ms ease-in-out infinite;
-    -moz-animation: beat 5000ms ease-in-out infinite;
-    -ms-animation: beat 5000ms ease-in-out infinite;
-    border: 0.5px solid #b4d2f1b8;
-    border-radius: 20px;
+    animation: beat 8000ms ease-in-out infinite;
+    -webkit-animation: beat 8000ms ease-in-out infinite;
+    -moz-animation: beat 8000ms ease-in-out infinite;
+    -ms-animation: beat 8000ms ease-in-out infinite;
+    /*  border: 0.5px solid /*#b4d2f1b8 #b4d2f1;*/
     padding: 0.2rem 0.4rem !important;
     font-size: 0.8rem;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 3px 1px rgb(0 123 255 / 49%);
+    box-shadow: 0 1px 4px 1px rgb(0 123 255 / 49%);
 }
 
 .stack small {
-    font-size: 65%;
+    font-size: 60%;
 }
 
 .badge-pink {
@@ -422,8 +487,17 @@ ul.stack {
 }
 
 .works .projects {
-    height: auto;
+    height: 315px;
     box-shadow: 0 1px 1px 0px rgb(0 123 255 / 49%)
+}
+
+.details {
+    transition: all 0.8s ease-in-out;
+}
+
+.works .projects:hover .details {
+    box-shadow: 1px 0px 1px 0px rgb(0 123 255 / 49%);
+    padding: 0.3rem;
 }
 
 .works img {
@@ -433,13 +507,13 @@ ul.stack {
 
 @media (min-width: 768px) {
     .works img {
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 65%;
     }
 }
 
 .works .projects .environments span {
-    font-size: 65%;
+    font-size: 50%;
     animation: beat 7000ms ease-in-out infinite;
     -webkit-animation: beat 7000ms ease-in-out infinite;
     -moz-animation: beat 7000ms ease-in-out infinite;
