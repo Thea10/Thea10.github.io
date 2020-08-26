@@ -410,6 +410,16 @@ h6 {
     transition-property: opacity, transform;
 }
 
+.cert .stack li {
+    animation: none;
+    /*  border: 0.5px solid /*#b4d2f1b8 #b4d2f1;*/
+    box-shadow: none;
+}
+
+.cert-title {
+    border-bottom: 1px solid #ffffff;
+}
+
 .icon-2 {
     display: inline-block;
     margin-right: 0;
@@ -515,13 +525,6 @@ ul {
     height: 70%;
 }
 
-@media (min-width: 768px) {
-    .works img {
-        width: 60%;
-        height: 65%;
-    }
-}
-
 .works .projects .environments span {
     font-size: 50%;
     animation: beat 7000ms ease-in-out infinite;
@@ -621,5 +624,12 @@ ul {
     }
     h3 {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .works img {
+        width: 60%;
+        height: 65%;
     }
 }
