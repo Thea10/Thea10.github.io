@@ -583,7 +583,7 @@ ul {
 }
 
 .works img {
-    width: 90%;
+    width: inherit;
     height: 200px;
     border-radius: 10px;
 }
@@ -599,6 +599,7 @@ ul {
     padding: 0.2rem 0.4rem !important;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
     /* box-shadow: 0 1px 1px 0px rgb(0 123 255 / 49%); */
 }
 
@@ -617,6 +618,12 @@ ul {
     border: 1px solid #ffffff;
     color: #ffffff;
 }
+
+.works .projects .environments span a:hover i  {
+    transform: rotateZ(-45deg);
+}
+
+
 
 .works .projects .ripple {
     position: absolute;
