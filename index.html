@@ -21,8 +21,7 @@
 
 <body class="App">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="container-fluid p-2" style="background: linear-gradient(black, #011831, black); ">
-        <header class="nav navbar-expand-sm navbar-light position-fixed" id="nav">
+        <header class="nav navbar-expand-md navbar-light position-fixed align-items-center" id="nav">
             <button class="navbar-toggler collapsebtn1 d-lg-none " type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="animated-icon1"><span></span><span></span><span></span></div>
             </button>
@@ -40,7 +39,7 @@
                 </a>
             </div>
 
-            <ul class="collapse navbar-collapse" id="navbar">
+            <ul class="collapse navbar-collapse mb-0 align-items-center" id="navbar">
                 <li class="nav-link"> <a href="#about" id="showabout">About Me</a> </li>
                 <li class="nav-link"> <a href="#works" id="showworks">Works</a></li>
                 <li class="nav-link"> <a href="https://github.com/Thea10" target="_blank" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -50,9 +49,9 @@
             </ul>
         </header>
 
-        <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="300" class="container text">
+        <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="300" class="container text">
             <h1>Hello, I'm Cynthia</h1>
-            <h3>I'm a front-end web developer based in Lagos, Nigeria</h3>
+            <h3>I'm a front-end web developer.</h3>
 
             <span style="transition: all 0.6s;" class="showabout btn btn-me heartBeat mt-3">More <i class="fa fa-chevron-down"  aria-hidden="true" id="caret"></i> </span>
 
@@ -61,42 +60,42 @@
 
         </div>
 
-        <div id="about" class="about mt-4">
-            <h3 style="color: #ffffffe0;"> <span class=" icon-2"></span> About Me </h3>
+        <div id="about" class="about mt-4 pt-4">
+            <h3 class="section-header"> <span class=" icon-2"></span> About Me </h3>
 
             <div class="row justify-content- m-0">
-                <div class="col-md-6 p-2 mt-3 mt-md-0">
-                    <small class="break-word" style="font-size: 60%;">
+                <div class="col-11 col-md-6 p-2 mt-3  mx-auto text-center">
+                    <small class="break-word about-info" >
                         My Name is Cynthia Akinade. I love to learn about anything I don't know yet and I am absolutely obsessed with providing solutions to problems in any way I can. At the moment I am a front-end developer who uses the required tools to bring UI mockups to life as well as implement the required communication medium between the client and server. Basically I combine what UI does and what BE does to make a web application come to life. That's fun (when it's hard and not hard). <br>
                         When I'm not working I reeeaddd different things, work on improving my skills, take c# lessons, think about if I really have impostor syndrome  or listen to music.
 
                     </small>
                 </div>
 
-                <div class="col-md-6 p-0 mt-3 mt-md-0">
-                    <h6>Stack <i class="fa fa-layer-group    "></i></h6>
-                    <ul class="stack row w-75 mx-auto my-3 justify-content-between pl-0">
+                <div class="col-11 col-md-7 p-0 mt-5 mx-auto">
+                    <h4 class="section-header">Stack <i class="fa fa-layer-group    "></i></h4>
+                    <ul class="stack row w-75 mx-auto my-4 justify-content-between pl-0">
                         <li class="col-3 col-md-2 d-flex"><small>HTML</small> <i class="fa fa-html5 badge badge-danger" aria-hidden="true"></i> </li>
 
                         <li class="col-3 col-md-2 d-flex"><small>CSS</small> <i class="fa fa-css3 badge badge-primary" aria-hidden="true"></i></li>
                         <li class="col-3 col-md-2 d-flex"><small>SASS</small> <i class="fab fa-sass badge badge-pink  text-white  "></i> </li>
                     </ul>
-                    <ul class="stack row w-75 mx-auto my-3 justify-content-between pl-0">
+                    <ul class="stack row w-75 mx-auto my-4 justify-content-between pl-0">
                         <li class="col-3 col-md-2 d-flex"><small>JQUERY</small> </li>
                         <li class="col-3 col-md-2 d-flex"><small>JAVASCRIPT</small> <i class="fab fa-js badge badge-warning "></i></li>
                         <li class="col-3 col-md-2 d-flex"><small>TYPESCRIPT</small> </li>
                     </ul>
 
-                    <ul class="stack row w-75 mx-auto my-3 justify-content-between pl-0">
+                    <ul class="stack row w-75 mx-auto my-4 justify-content-between pl-0">
                         <li class="col-3 col-md-2 d-flex"><small>ANGULAR</small> <i class="fab fa-angular badge badge-danger   "></i> </li>
                         <li class="col-3 col-md-2 d-flex"><small>REACT</small> <i class="fab fa-react    "></i> </li>
-                        <li class="col-9 d-flex mt-3 mx-auto " style="border-radius: 0px 0px 5px 5px;"><small>"Whatever I need to learn to complete a project"</small></li>
-                    </ul>
+                        <li class="col-9 d-flex mt-3 mx-auto " style="border-radius: 0px 0px 5px 5px; opacity: 0;"><small>"Whatever I need to learn to complete a project"</small></li>
+                    </ul> 
                 </div>
 
-                <div class="col-md-6 p-0 mt-5">
-                    <h6>Other Tools I use <i class="fa fa-tools    "></i></h6>
-                    <ul class="stack row w-75 mx-1 my-2 justify-content-between pl-0">
+                <div class="col-11 col-md-7 p-0 mt-5 mx-auto">
+                    <h4 class="section-header">Other Tools I use <i class="fa fa-tools "></i></h4>
+                    <ul class="stack row mx-1 my-4 justify-content-between pl-0">
                         <li class="col-3 col-md-2 d-flex"><small>GIT</small> <i class="fa fa-code-branch badge badge-warning" aria-hidden="true"></i> </li>
 
                         <li class="col-3 col-md-2 d-flex"><small>GITHUB</small> <i class="fa fa-github" aria-hidden="true"></i> </li>
@@ -107,11 +106,11 @@
 
                 </div>
 
-                <div class="col-12 p-0 mt-5 cert">
-                    <h6> Certifications <i class="fa fa-certificate"></i></h6>
-                    <ul class="stack row w-75 mx-1 my-2 justify-content-between pl-0">
-                        <li class="col-md-6">
-                            <h6 class="cert-title">Object-Oriented Programming Fundamentals in C#</h6>
+                <div class="col-12 p-0 mt-5 cert text-center">
+                    <h4 class="section-header"> Certifications <i class="fa fa-certificate"></i></h4>
+                    <ul class=" row w-75  mx-auto my-4 justify-content-between pl-0">
+                        <li class="w-100">
+                            <h6 class="certtitle">Object-Oriented Programming Fundamentals in C#</h6>
                             <small class="d-block">Issuer: PluralSight</small>
                             <small class="d-block">Issued: August 2020</small>
                         </li>
@@ -125,103 +124,95 @@
             </div>
         </div>
 
-        <div class="works mt-4" id="works">
-            <h3 style="color: #ffffffe0;"> Things I've worked on <span class=" icon-3"></span> </h3>
+        <div class="works pt-4" id="works">
+            <h4 class="section-header mb-4"> Things I've worked on <!--<span class=" icon-3"></span>--> </h4>
 
             <div class="row m-0 justify-content-around">
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
-                    <!--<ul class="ripple pl-0">
-                        <li></li>
+                <div class="projects col-9 col-sm-5 col-md-3  mx-auto my-3 mx-md-2 my-md-2" style="background: rgba(9, 9, 9, 0.74);">
+                    <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
+                        <img src="../img/screenplay.png" alt="projimg">
+
+                    </div>
+                    <div class="details row m-0 justify-content-evenly h-100" style="background: rgba(9, 9, 9, 0.9);">
+
                      
-                    </ul>-->
-                    <div class="details row m-0 justify-content-evenly h-100">
 
-                        <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
-                            <img src="../img/screenplay.png" alt="projimg">
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
 
-                        </div>
+                            <span class="col-4 mt-2">REACT  <i class="fab fa-react    "></i></span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
-
-                            <span class="col-3 mt-2">REACT  <i class="fab fa-react    "></i></span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
-
-                            <span class="col-4 mt-2"> <a title="Malon" href="https://www.malonglobaltech.com" target="_blank"> Take me there  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>  </span>
+                            <span class="col-4 mt-2"> <a title="Malon" href="https://www.malonglobaltech.com" target="_blank">Visit  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>  </span>
                         </small>
                     </div>
 
                 </div>
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
+                <div class="projects col-9 col-sm-5 col-md-3  mx-auto my-3 mx-md-2 my-md-2" style=" background:rgba(41, 0, 113, 0.74)">
+                    <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
+                        <img src="../img/raisely.png" alt="projimg">
 
-                    <div class="details row m-0 justify-content-evenly h-100">
+                    </div>
 
-                        <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
-                            <img src="../img/raisely.png" alt="projimg">
+                    <div class="details row m-0 justify-content-evenly h-100" style=" background:rgba(41, 0, 113, 0.9)">
 
-                        </div>
+                       
 
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
 
-                            <span class="col-4 mt-2">SIMPLE SIGNUP FORM </span>
+                            <span class="col-11 mt-2">SIMPLE SIGNUP FORM </span>
 
-                            <span class="col-3 mt-2">ANGULAR  <i class="fab fa-angular    "></i></span>
-                            <span class="col-3 mt-2">TYPESCRIPT</span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+                            <span class="col-4 mt-2">ANGULAR  <i class="fab fa-angular    "></i></span>
+                            <span class="col-4 mt-2">TYPESCRIPT</span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
                           
                             <span class="col-4 mt-2"> <a href="https://github.com/Thea10/raisely-signup" target="_blank">GITHUB <i class="fa fa-github" aria-hidden="true"></i></a> </span>
-                            <span class="col-4 mt-2"> <a href="https://sign-for-raisely.web.app/">Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i></a>  </span>
+                            <span class="col-4 mt-2"> <a href="https://sign-for-raisely.web.app/">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>  </span>
                         </small>
                     </div>
 
                 </div>
 
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
-                    <!--<ul class="ripple pl-0">
-                        <li></li>
+                <div class="projects col-9 col-sm-5 col-md-3  mx-auto my-3 mx-md-2 my-md-2" style="background: rgba(188, 24, 35, 0.74);">
+                    <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
+                        <img src="../img/Derrit.png" alt="projimg">
+
+                    </div>
+                    <div class="details row m-0 justify-content-evenly h-100" style="background: rgba(188, 24, 35, 0.9);">
+
                      
-                    </ul>-->
-                    <div class="details row m-0 justify-content-evenly h-100">
 
-                        <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
-                            <img src="../img/Derrit.png" alt="projimg">
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
+                            <span class="col-11 mt-2">SIMPLE REDDIT CLONE</span>
 
-                        </div>
-
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
-                            <span class="col-4 mt-2">SIMPLE REDDIT CLONE</span>
-
-                            <span class="col-3 mt-2">REACT  <i class="fab fa-react    "></i></span>
-                            <span class="col-3 mt-2">REDUX  <i class="fab  "><img src="https://img.icons8.com/ios/50/000000/redux.png" style="height: 10px; width: 10px" /></i></span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+                            <span class="col-4 mt-2">REACT  <i class="fab fa-react    "></i></span>
+                            <span class="col-4 mt-2">REDUX  <i class="fab  "><img src="https://img.icons8.com/ios/50/000000/redux.png" style="height: 10px; width: 10px" /></i></span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
                             <span class="col-4 mt-2"> <a href="https://github.com/Thea10/derrit">GITHUB <i class="fa fa-github" aria-hidden="true"></i></a> </span>
-                            <span class="col-4 mt-2"> <a title="Derrit" href="https://derrit.netlify.app/" target="_blank"> Take me there  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>  </span>
+                            <span class="col-4 mt-2"> <a title="Derrit" href="https://derrit.netlify.app/" target="_blank">Visit  <i class="fa fa-arrow-right" aria-hidden="true"></i> </a>  </span>
                         </small>
                     </div>
 
                 </div>
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
-                    <!--<ul class="ripple pl-0">
-                        <li></li>
-                     
-                    </ul>-->
-                    <div class="details row m-0 justify-content-evenly h-100">
+                <div class="projects col-9 col-sm-5 col-md-3  mx-auto my-3 mx-md-2 my-md-2" style="background: rgba(221, 165, 30, 0.74);">
+                    <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
+                        <img src="../img/logo.jpg" alt="projimg">
 
-                        <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
-                            <img src="../img/logo.jpg" alt="projimg">
+                    </div>
+                    <div class="details row m-0 justify-content-evenly h-100"  style="background: rgba(215, 161, 2,0.85);">
 
-                        </div>
+                       
 
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
-                            <span class="col-5 mt-2">LuNAhoNey</span>
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
+                            <span class="col-11 mt-2">LuNAhoNey</span>
 
-                            <span class="col-3 mt-2">VUE  <i class="fab fa-vuejs    "></i></span>  
-                            <span class="col-3 mt-2">VUEX </span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+                            <span class="col-4 mt-2">VUE  <i class="fab fa-vuejs    "></i></span>  
+                            <span class="col-4 mt-2">VUEX </span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
                            
 
@@ -236,25 +227,25 @@
 
                 </div>
 
-                <!--<div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
+                <!--<div class="projects col-11 col-sm-5 col-md-4  mx-auto my-3 mx-md-3 my-md-2">
                   
                     <div class="details row m-0 justify-content-evenly h-100">
                       
-                            <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
+                            <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
                                 <img src="../img/screen.png"  alt="projimg">
                                
                             </div>
                         
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
 
-                            <span class="col-3 mt-2">SCREENPLAY NG</span>
+                            <span class="col-4 mt-2">SCREENPLAY NG</span>
 
-                            <span class="col-3 mt-2">ANGULAR 8 <i class="fab fa-angular    "></i></span>
-                            <span class="col-3 mt-2">TYPESCRIPT</span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+                            <span class="col-4 mt-2">ANGULAR 8 <i class="fab fa-angular    "></i></span>
+                            <span class="col-4 mt-2">TYPESCRIPT</span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
                           
-                            <span class="col-4 mt-3"> <a href="https://screenplayngg.firebaseapp.com/">Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i></a>  </span>
+                            <span class="col-4 mt-3"> <a href="https://screenplayngg.firebaseapp.com/">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a>  </span>
                         </small>
                     </div>
                    
@@ -262,51 +253,45 @@
 
 
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
-                    <!--<ul class="ripple pl-0">
-                        <li></li>
-                     
-                    </ul>-->
-                    <div class="details row m-0 justify-content-evenly h-100">
+                <div class="projects col-9 col-sm-5 col-md-3  mx-auto my-3 mx-md-2 my-md-2" style="background: rgba(1, 59, 65, 0.74);">
+                    <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
+                        <img src="../img/forecast.PNG" alt="projimg">
 
-                        <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
-                            <img src="../img/forecast.PNG" alt="projimg">
+                    </div>
+                    <div class="details row m-0 justify-content-evenly h-100" style="background: rgba(1, 59, 65, 0.9);">
 
-                        </div>
+                      
 
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
 
-                            <span class="col-4 mt-2">WEATHER FORECAST</span>
-                            <span class="col-3 mt-2">REACT</span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+                            <span class="col-11 mt-2">WEATHER FORECAST</span>
+                            <span class="col-4 mt-2">REACT</span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
                             <span class="col-4 mt-3"> <a href="https://github.com/Thea10/forecast">GITHUB <i class="fa fa-github" aria-hidden="true"></i></a> </span>
-                            <span class="col-4 mt-3"> <a href="https://weather---forecast.herokuapp.com/"> Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </span>
+                            <span class="col-4 mt-3"> <a href="https://weather---forecast.herokuapp.com/">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </span>
                         </small>
                     </div>
 
                 </div>
 
-                <div class="projects col-11 col-sm-5 col-md-4 col-lg-3 mx-auto my-3 mx-md-3 my-md-2">
-                    <!--<ul class="ripple pl-0">
-                        <li></li>
-                     
-                    </ul>-->
-                    <div class="details row m-0 justify-content-evenly h-100">
+                <div class="projects col-9 col-sm-5 col-md-3  mx-auto my-3 mx-md-2 my-md-2" style="background: rgba(128, 4, 126, 0.74);">
+                    <div class="img-holder col-11 m-auto p-1 d-flex  align-items-center justify-content-center">
+                        <img src="../img/quiz.PNG" alt="projimg">
 
-                        <div class="img-holder col-12  h-75 p-1 d-flex  align-items-center justify-content-center">
-                            <img src="../img/quiz.PNG" alt="projimg">
+                    </div>
+                    <div class="details row m-0 justify-content-evenly h-100" style="background: rgba(128, 4, 126, 0.9);">
 
-                        </div>
+                       
 
-                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-center justify-content-between">
+                        <small class="environments col-12 row m-0 text-white bg-orange h-25 p-0 d-flex align-items-end justify-content-between">
 
-                            <span class="col-4 mt-2">QUIZ APP</span>
-                            <span class="col-3 mt-2">JAVASCRIPT</span>
-                            <span class="col-3 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
+                            <span class="col-11 mt-2">QUIZ APP</span>
+                            <span class="col-4 mt-2">JAVASCRIPT</span>
+                            <span class="col-4 mt-2">HTML <i class="fa fa-html5" aria-hidden="true"></i>  SCSS </span>
 
                             <span class="col-4 mt-3"> <a href="https://github.com/Thea10/quiz-app" target="_blank">GITHUB <i class="fa fa-github" aria-hidden="true"></i></a> </span>
-                            <span class="col-4 mt-3"> <a href="https://lucid-jepsen-558407.netlify.com" target="_blank"> Take me there <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </span>
+                            <span class="col-4 mt-3"> <a href="https://lucid-jepsen-558407.netlify.com" target="_blank">Visit <i class="fa fa-arrow-right" aria-hidden="true"></i></a> </span>
                         </small>
                     </div>
 
@@ -316,8 +301,8 @@
         </div>
 
 
-        <footer class="d-flex justify-content-between align-items-center">
-            <ul class=" navbar">
+        <footer class="d-flex justify-content-between align-items-center p-5">
+            <ul class=" navbar flex-column">
                 <li class="nav-link">
                     <a href="mailto:olucynakin@gmail.com" target="_blank"> <i class="fa fa-envelope" aria-hidden="true"></i> </a>
                 </li>
@@ -325,11 +310,10 @@
                 <li class="nav-link"> <a href="https://drive.google.com/file/d/1sX3bYKdoQLDxTOYQStL71I2k1e44Hw0N/view?usp=sharing" target="_blank"> Resumé</a></li>
             </ul>
 
-            <a style="font-size: 0.4rem;"> &copy <span id="copy"></span> Cynthia Akinade </a>
+            <a style="font-size: 0.8rem;"> &copy <span id="copy"></span> Cynthia Akinade </a>
 
 
         </footer>
-    </div>
 
     <!--<div class="home">
         <header class="nav navbar-expand-sm navbar-light" id="nav">
@@ -459,7 +443,7 @@
         window.addEventListener('scroll', (e) => {
             var nav = document.getElementById('nav');
             if (window.scrollY > 50) {
-                nav.classList.add('nav-scrolled')
+                nav.classList.add('nav-scrolled');
             } else if (nav.classList.contains('nav-scrolled')) {
                 nav.classList.remove("nav-scrolled");
 
