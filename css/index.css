@@ -565,11 +565,17 @@ li i{
     color: #444649;
     
 }
-.cert .stack li {
+.cert ul li {
     animation: none;
     /*  border: 0.5px solid /*#b4d2f1b8 #b4d2f1;*/
     box-shadow: none;
+    background: #011129;
+    padding: 1rem;
+    border-radius: 0px 30px 10px;
+    color: #ffff;
+    line-height: 3;
 }
+
 
 .cert-title {
     border-bottom: 1px solid #444649;
