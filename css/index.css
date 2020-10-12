@@ -767,9 +767,9 @@ ul {
     border-radius: 10px;
     display: none;
 }
-.works .projects .environments span:first-child{
+/* .works .projects .environments span:first-child{
     border-left: 8px solid #EBECFF;
-}
+} */
 
 .works .projects .environments span {
     font-size: 80%;
