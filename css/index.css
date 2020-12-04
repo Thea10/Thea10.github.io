@@ -68,15 +68,15 @@
 
 @-webkit-keyframes swing-in-bottom-bck {
   0% {
-    -webkit-transform: rotateX(-70deg);
-    transform: rotateX(-70deg);
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotateX(-20deg);
-    transform: rotateX(-20deg);
+    -webkit-transform: rotateX(-8deg);
+    transform: rotateX(-8deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     opacity: 1;
@@ -84,15 +84,15 @@
 }
 @keyframes swing-in-bottom-bck {
   0% {
-    -webkit-transform: rotateX(-70deg);
-    transform: rotateX(-70deg);
+    -webkit-transform: rotateX(-80deg);
+    transform: rotateX(-80deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     opacity: 0;
   }
   100% {
-    -webkit-transform: rotateX(-20deg);
-    transform: rotateX(-20deg);
+    -webkit-transform: rotateX(-8deg);
+    transform: rotateX(-8deg);
     -webkit-transform-origin: bottom;
     transform-origin: bottom;
     opacity: 1;
@@ -227,32 +227,36 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 7px !important;
-  background-color: #011831;
+  background-color: #03080df7;
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 ::-webkit-scrollbar-button {
   border-radius: 7px !important;
-  background-color: #011831;
+  background-color:#03080df7;
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgb(0 128 255);
-  box-shadow: inset 0 0 6px rgb(0 128 255);
+  -webkit-box-shadow: inset  #ebecff;
+  box-shadow: inset  #ebecff;
   border-radius: 10px;
 }
 @font-face {
+  font-family: "Now";
+  src: url("../font/now.bold.otf") format("opentype");
+}
+/* @font-face {
   font-family: "Graphik";
   src: url("../font/fonts/Graphik/Graphik-400-Regular.otf") format("opentype");
-}
+} */
 
 body {
-  font-family: "Graphik", "Nunito", "Pacifico", Roboto, "Helvetica Neue", Arial,
+  font-family: "Graphik",  "Nunito", "Pacifico", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   background:rgba(235, 236, 255, 0.40);
-  color: #ebecff;
+    color: #ebecff;
   /* background: #fafafa; */
   width: 100vw;
   overflow-x: hidden;
@@ -340,7 +344,7 @@ i {
   transition: 0.5s ease-in-out;
   height: 1px;
   width: 100%;
-  background: #b4d2f1b8;
+  background: #fafafa;
 }
 
 .animated-icon1 span:nth-child(1) {
@@ -387,11 +391,14 @@ i {
 }
 
 .navbar-brand .text {
-  font-family: "Stylish", sans-serif;
+  font-family: "Now";
+  color: #fafafa;
+  line-height: 34.8px;
 }
 
 .nav-link a {
-  color: #b4d2f1b8;
+  color: #fafafa;
+  line-height: 34.8px;
 }
 
 .nav-link a:hover {
@@ -548,7 +555,8 @@ li i {
   border-left: 5px solid #ebecff8f;
   border-right: 5px solid #ebecff8f;
   box-shadow: none;
-  background: #011129;
+  /* background: #011129; */
+background:  #03080df7;
   padding: 1rem;
   border-radius: 0px 30px 10px;
   color: #ebecff;
@@ -619,18 +627,19 @@ ul {
   font-size: 0.8rem;
   align-items: center;
   justify-content: space-evenly;
-  box-shadow: 0 12.5px 10px #d4dbe3;
-  background-color: #011831;
+  /* box-shadow: 0 8px 10px #d4dbe3; */
+  /* background-color: #011831; */
+  background: #03080df7;
   color: #ebecff;
   transition: all 0.6s;
   text-transform: uppercase;
 }
-.stack li:hover {
+/* .stack li:hover {
   box-shadow: none;
   background-color: #dadbe8;
   color: #011129;
   border-bottom: 2px solid #011129;
-}
+} */
 
 .stack li:hover small {
   font-weight: 700;
