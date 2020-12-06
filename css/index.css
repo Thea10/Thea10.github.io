@@ -735,6 +735,10 @@ ul {
   justify-content: center;
   text-transform: uppercase;
 }
+.works .projects .environments:last-child span:last-child{
+  text-transform: revert;
+}
+
 
 .works .projects .environments span a {
   cursor: pointer;
