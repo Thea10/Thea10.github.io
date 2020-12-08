@@ -278,6 +278,7 @@ header {
   right: 10px;
   top: 0;
   background: #00060d;
+  z-index: 22;
 }
 
 header,
