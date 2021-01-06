@@ -494,14 +494,12 @@ h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
   /* color: #000305; */
-  font-weight: 600;
 }
 
 h3 {
   /* color: #333f4d; */
   text-transform: unset;
   margin-bottom: 1.5rem;
-  font-weight: 600;
 }
 
 .btn-me {
@@ -509,15 +507,17 @@ h3 {
   color: #ebecff;
   cursor: pointer;
   transition: all 0.6s;
-  background: transparent;
+  /* background: transparent;
   border: 1px solid #011831;
-  background: #011831;
+  background: #011831; */
+  border: 1px solid rgb(2 26 43);
+  background: rgb(3, 12, 19);
 }
 
 .btn-me:hover,.btn-me:focus  {
-  background:  #ebecff;
+  background:  #182331;
   border: 0;
-  color: #333f4d;
+  /* color: #333f4d; */
 
 }
 .btn-me .fa {
@@ -532,12 +532,16 @@ h3 {
 .section-header {
   /* color: #242424; */
   text-align: center;
-  font-weight: 600;
 }
 
 /* .about .about-info {
   color: #333f4d;
 } */
+
+.about-info{
+    font-size: 1rem;
+    line-height: 35px;
+}
 
 .img img {
   height: 300px;
