@@ -256,7 +256,8 @@ body {
     "Segoe UI Symbol", "Noto Color Emoji";
   /* background:rgba(235, 236, 255, 0.40); */
   background: rgb(0 6 13);
-  color: #ebecff;
+  /* color: #ebecff; */
+  color: #bebfce;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -269,6 +270,10 @@ body {
 
 .app {
   display: none;
+  background: url("../img//download.png");
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 header {
   left: 10px;
@@ -487,6 +492,15 @@ i {
   transition: all 0.9s;
 }
 
+
+.intro h1 span{
+ color: #778ea8;
+ font-weight: 600;
+}
+
+.intro h3{
+  color: #9baab6;
+}
 h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
@@ -539,6 +553,8 @@ h3 {
   font-size: 1rem;
   line-height: 35px;
 }
+
+
 
 .img img {
   height: 300px;
@@ -642,7 +658,8 @@ ul {
   /* background-color: #011831; */
   /* background: #03080df7; */
   background: #08111c;
-  color: #ebecff;
+  color: #6e90ac;
+  /* #5e9dd1*/
   transition: all 0.6s;
   text-transform: uppercase;
 }
@@ -696,6 +713,9 @@ ul {
   padding: 0.7rem;
   border-radius: 10px;
 }
+.works .projects:hover {
+ opacity: 0.9 !important;
+} 
 
 .details {
   position: absolute;
@@ -759,6 +779,7 @@ ul {
 
 footer {
   background: #252934;
+  opacity: 0.8;
 }
 
 footer .nav-link a {
@@ -821,6 +842,10 @@ footer .nav-link a {
 }
 
 @media (max-width: 475px) {
+
+  .app{
+    background-size: 100px;
+  }
   h3 {
     font-size: 1rem;
   }
