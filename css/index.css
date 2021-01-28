@@ -736,7 +736,7 @@ ul {
   top: 0;
   width: 100%;
   left: 0;
-  background: rgb(0 6 13) !important;
+  background: #08111c !important;
   /* box-shadow: 0 0px 5px 2px #d4dbe3; */
 }
 
@@ -785,6 +785,24 @@ footer {
 footer .nav-link a {
   color: #ebecff;
 }
+footer .nav-link a:hover{
+  border-bottom: none;
+}
+
+footer .nav-link a:hover i{
+  transform: scale(1.02);
+
+}
+
+footer i{
+  background: #0b0c0f;
+  color: #0b0c0f;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in-out;
+}
+
 
 .ripple li {
   opacity: 0;
